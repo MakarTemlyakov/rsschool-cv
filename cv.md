@@ -46,8 +46,7 @@ When I worked with Frontend side, I have a interst in Frontend stack and I wanna
                ? `Mr.${x.first_name} ${x.last_name}`
                : `Ms.${x.first_name} ${x.last_name}`
            )
-       }
-     };
+    };
     const getUserCompanyInfo = (userId: any) => {
     return companyInfo
         .filter(x => x.id === userId)
