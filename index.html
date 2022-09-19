@@ -52,28 +52,22 @@
                     <div class="cv-info__code">
                         <h2 class="cv-info__title">Code from my test project:</h2>
                         <code class="cv-info__code-sharp">
-                    <span>C#</span>
-                    <pre>
-                    public async GetPlayersMatchInfo()
-                    {
-                            var content = await HttpHelper.GetContent(_httpClient, "api/players/25907144/matches?project=heroes");
-                            var matches = JsonConvert.DeserializeObject(content);
-                            var viewMatches = _mapper.Map(matches);
-                            return viewMatches;
-                    }
-                    public async GetPlayersMatchInfo()
-                    {
-                            var content = await HttpHelper.GetContent(_httpClient, "api/players/25907144/matches?project=heroes");
-                            var matches = JsonConvert.DeserializeObject(content);
-                            var viewMatches = _mapper.Map(matches);
-                            return viewMatches;
-                    }
-                    </code>
-                        </pre>
+                            <span>C#</span>
+                        </code>
                         <pre>
-                    <code class="cv-info__code-js">
-                    <span>JavaScript</span>
-                    const getUserName = (userId: number) => {  
+                    public async GetPlayersMatchInfo()
+                    {
+                            var content = await HttpHelper.GetContent(_httpClient, "api/players/25907144/matches?project=heroes");
+                            var matches = JsonConvert.DeserializeObject(content);
+                            var viewMatches = _mapper.Map(matches);
+                            return viewMatches;
+                    }
+                    </pre>
+                        <code class="cv-info__code-js">
+                        <span>JavaScript</span>
+                    </code>
+                        <pre>
+                        const getUserName = (userId: number) => {  
                         return usersInfo
                             .filter(x => x.id === userId)
                             .map(x =>
@@ -83,20 +77,7 @@
                             )
                            }
                         };
-                    const getUserCompanyInfo = (userId: any) => {
-                        return companyInfo
-                            .filter(x => x.id === userId)
-                            .map((x, id: number) => {
-                            return (
-                              &lt;div key={id}&gt;
-                                 &lt;p&gt;Company: {x.title}&lt;/p&gt;
-                                 &lt;p&gt;Industry: {x.industry}&lt;/p&gt;
-                              &lt;/div&gt;
-                            );
-                        });
-                    };
-                    </code>
-                </pre>
+                        </pre>
                     </div>
                 </div>
                 <div class="cv-info__wrapper">
