@@ -51,25 +51,25 @@
                 <div class="cv-info__wrapper cv-info__wrapper_code">
                     <div class="cv-info__code">
                         <h2 class="cv-info__title">Code from my test project:</h2>
-                        <pre>
-                    <code class="cv-info__code-sharp">
+                        <code class="cv-info__code-sharp">
                     <span>C#</span>
-                    public async Task<List<PlayersMatchInfo>> GetPlayersMatchInfo()
+                    <pre>
+                    public async GetPlayersMatchInfo()
                     {
                             var content = await HttpHelper.GetContent(_httpClient, "api/players/25907144/matches?project=heroes");
-                            var matches = JsonConvert.DeserializeObject<List<MatchPlayersDto>>(content);
-                            var viewMatches = _mapper.Map<List<PlayersMatchInfo>>(matches);
+                            var matches = JsonConvert.DeserializeObject(content);
+                            var viewMatches = _mapper.Map(matches);
                             return viewMatches;
                     }
-                    public async Task<List<PlayersMatchInfo>> GetPlayersMatchInfo()
+                    public async GetPlayersMatchInfo()
                     {
                             var content = await HttpHelper.GetContent(_httpClient, "api/players/25907144/matches?project=heroes");
-                            var matches = JsonConvert.DeserializeObject<List<MatchPlayersDto>>(content);
-                            var viewMatches = _mapper.Map<List<PlayersMatchInfo>>(matches);
+                            var matches = JsonConvert.DeserializeObject(content);
+                            var viewMatches = _mapper.Map(matches);
                             return viewMatches;
                     }
                     </code>
-                    </pre>
+                        </pre>
                         <pre>
                     <code class="cv-info__code-js">
                     <span>JavaScript</span>
